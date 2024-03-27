@@ -1,3 +1,61 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "next-recommended",
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals",
+    "plugin:next-recommended/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+
+    "import/prefer-default-export": "off",
+
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "newlines-between": "always"
+      }
+    ],
+
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+
+    "react/react-in-jsx-scope": "off",
+
+    "react/jsx-props-no-spreading": "off",
+
+    "react/jsx-no-bind": "off",
+
+    "prettier/prettier": "error"
+  }
 }
