@@ -4,6 +4,8 @@
     "source.fixAll.eslint": "always",
   },
   "cSpell.words": [
-    "airbnb"
+    "airbnb",
+    "clsx",
+    "sonner"
   ],
 }
