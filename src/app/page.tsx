@@ -1,13 +1,11 @@
 import Image from 'next/image';
 
-import { Button } from '@/components/button';
-import { DownloadIcon } from '@/components/icons/download';
 import { GitHubIcon } from '@/components/icons/github';
 import { InstagramIcon } from '@/components/icons/instagram';
 import { LinkedInIcon } from '@/components/icons/linkedin';
 import { MailIcon } from '@/components/icons/mail';
-import { PDFIcon } from '@/components/icons/pdf';
 import { WhatsAppIcon } from '@/components/icons/whatsapp';
+import { ResumeButtons } from '@/components/resume-buttons';
 import { SocialActionsFeedback } from '@/components/social-actions-feedback';
 import { SocialButton } from '@/components/social-button';
 
@@ -34,11 +32,7 @@ export default function HomePage() {
         Let&apos;s build something awesome 🔥
       </p>
 
-      <div className="mt-16 flex items-center gap-4">
-        <Button icon={PDFIcon} />
-
-        <Button icon={DownloadIcon}>Download CV</Button>
-      </div>
+      <ResumeButtons />
 
       <div className="mt-6 flex items-center gap-4">
         <SocialButton
@@ -62,7 +56,10 @@ export default function HomePage() {
           <GitHubIcon />
         </SocialButton>
 
-        <SocialButton to="/" textToCopy="+55 (44) 99876-6289">
+        <SocialButton
+          to="https://wa.me/5544998766289"
+          textToCopy="+55 (44) 99876-6289"
+        >
           <WhatsAppIcon />
         </SocialButton>
 
