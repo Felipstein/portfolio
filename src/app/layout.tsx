@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col bg-background bg-main bg-contain bg-no-repeat text-[#F0F0F0] antialiased`}
+        className={`${inter.className} flex flex-col bg-background bg-main bg-cover bg-no-repeat text-[#F0F0F0] antialiased`}
       >
         <Toaster richColors />
 
