@@ -8,8 +8,8 @@ phases:
   pre_build:
     commands:
       - npm pkg delete scripts.prepare
-      - npm install --lock-file
+      - npm ci
 
   build:
     commands:
-      - npm build
+      - npm run build
