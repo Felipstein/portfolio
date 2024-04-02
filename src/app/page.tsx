@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { ForDevsSection } from '@/components/for-devs-section';
 import { GitHubIcon } from '@/components/icons/github';
 import { InstagramIcon } from '@/components/icons/instagram';
 import { LinkedInIcon } from '@/components/icons/linkedin';
@@ -73,6 +74,8 @@ export default function HomePage() {
       </div>
 
       <SocialActionsFeedback />
+
+      <ForDevsSection className="mt-16" />
     </div>
   );
 }
