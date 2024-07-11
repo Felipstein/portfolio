@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <div className="flex h-full flex-col items-center justify-center px-6">
       <Image
-        src="/avatar_profile.svg"
+        src="/avatar_profile.jpg"
         alt="Avatar Profile"
         width={126}
         height={126}
